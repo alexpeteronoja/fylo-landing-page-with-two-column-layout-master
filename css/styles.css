@@ -1,0 +1,242 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2;
+    margin: 0;
+    padding: 0;
+    columns: hsl(238, 22%, 44%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* margin and padding */
+
+.fylo-margin-padding {
+    padding: 4rem 2rem;
+    margin: 1rem 1rem;
+}
+
+.fylo-buttom-margin-padding {
+    margin: 0;
+    padding: 4rem 2.5rem;
+}
+
+
+/* Navigation Section */
+
+.logo {
+    width: 150px;
+}
+
+.nav-menu {
+    float: left;
+}
+
+.menu-list {
+    float: right;
+}
+
+.menu-items {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+}
+
+.rest {
+    clear: both;
+}
+
+
+/* Product Section */
+
+#product {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.input-email {
+    padding: 7px 20px;
+    border-radius: 5%;
+    width: 280px;
+}
+
+.product-submit {
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    padding: 10px 2rem;
+    width: 180px;
+    border-style: none;
+    border-radius: 5%;
+    margin-left: 10px;
+}
+
+
+/* Testimonial Section */
+
+.testimonial-image {
+    width: 100%;
+}
+
+#testimonial {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.author-image {
+    border-radius: 100%;
+    width: 50px;
+    float: left;
+}
+
+.author-name,
+.author-post {
+    line-height: 0;
+    margin-top: 28px;
+    margin-left: 65px;
+}
+
+#testimonial a {
+    color: hsl(170, 45%, 43%);
+    text-underline-offset: 0.5rem;
+}
+
+.review {
+    margin: 80px 166px 0px 41px;
+}
+
+
+/* Sign up Section */
+
+#sign-up {
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sign-up-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-area {
+    width: 360px;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-radius: 5%;
+}
+
+.sign-up-button {
+    background-color: hsl(224, 93%, 58%);
+    color: hsl(240, 75%, 98%);
+    padding: 10px 10px;
+    width: 160px;
+    border-style: none;
+    border-radius: 5%;
+}
+
+
+/* footer section */
+
+#footer-section {
+    background-color: hsl(243, 87%, 12%);
+    color: #ffffff;
+}
+
+#footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+#footer-section a:hover {
+    color: hsl(224, 93%, 58%);
+}
+
+#footer-section ul {
+    list-style: none;
+}
+
+.contact a {
+    display: block;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 1.5rem;
+}
+
+.fa-brands {
+    margin-left: 20px;
+    border-color: red;
+}
+
+@media (max-width: 1155px) {
+    #product {
+        grid-template-columns: 100%;
+    }
+    .product-entry {
+        grid-row: 1;
+    }
+    .product-description {
+        grid-row: 2;
+        text-align: center;
+    }
+    .product-submit {
+        margin-top: 20px;
+        width: 330px;
+    }
+    /* Testimonial Section */
+    #testimonial {
+        grid-template-columns: 100%;
+    }
+    .testimonial-right-side {
+        grid-row: 1;
+    }
+    .testimonial-left-side {
+        grid-row: 2;
+    }
+    .testimonial-link {
+        text-align: center;
+    }
+    .review {
+        margin: 20px 20px 20px 35px;
+    }
+    /* Sign up Section */
+    #sign-up {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .sign-up-button {
+        width: 380px;
+    }
+    /* footer section */
+    .footer {
+        grid-template-columns: 100%;
+    }
+    .footer-stlye {
+        margin: 20px 0;
+    }
+    .social-icons {
+        text-align: center;
+    }
+}
